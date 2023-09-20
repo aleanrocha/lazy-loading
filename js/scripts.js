@@ -7,7 +7,7 @@ const observer = new IntersectionObserver((entries, observer) => {
     img.src = img.src.replace("&w=10&", "&w=1000&")
     observer.unobserve(img)
   })
-})
+}, {})
 
 images.forEach((img) => {
   observer.observe(img)
